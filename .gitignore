@@ -7,3 +7,4 @@ backend/**/__pycache__
 .env
 backend/.env
 frontend/.env
+build_log.txt
