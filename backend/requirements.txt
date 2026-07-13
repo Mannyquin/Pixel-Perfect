@@ -8,7 +8,7 @@ timm==1.0.27
 numpy==2.5.0
 scipy==1.18.0
 
-opencv-contrib-python-headless==4.13.0.92
+
 mediapipe==0.10.35
 albumentations==2.0.8
 
