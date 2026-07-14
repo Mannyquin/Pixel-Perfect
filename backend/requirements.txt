@@ -9,8 +9,8 @@ scipy==1.18.0
 mediapipe==0.10.35
 albumentations==2.0.8
 
-xgboost==3.3.0
-scikit-learn==1.9.0
+scikit-learn==1.6.1
+xgboost==3.0.5
 joblib==1.5.3
 
 Pillow==12.2.0

@@ -5,7 +5,6 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
 
-# System libraries required by OpenCV/MediaPipe
 RUN apt-get update && apt-get install -y \
     libgl1 \
     libglib2.0-0 \
@@ -17,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     libxcb-shm0 \
     libx11-6 \
     libegl1 \
+    libgles2 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
