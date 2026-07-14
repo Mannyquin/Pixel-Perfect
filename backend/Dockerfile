@@ -19,10 +19,9 @@ COPY requirements.txt .
 RUN pip install --upgrade pip
 
 RUN pip install --no-cache-dir \
-    --extra-index-url https://download.pytorch.org/whl/cpu \
+    --index-url https://download.pytorch.org/whl/cpu \
     torch==2.12.1 \
     torchvision==0.27.1
-
 
 RUN pip install --no-cache-dir -r requirements.txt
 
@@ -30,4 +29,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["uvicorn","main:app","--host","0.0.0.0","--port","8000"]
+CMD ["sh","-c","uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
